@@ -119,14 +119,12 @@ fun HomeScreen(modifier: Modifier = Modifier) {
             ) {
                 Column(Modifier.align(Alignment.CenterStart), verticalArrangement = Arrangement.spacedBy(9.dp)) {
                     Text("LIVE TRACKING", color = Blue, fontSize = 11.sp, fontWeight = FontWeight.Bold, letterSpacing = 2.sp)
-                    Text("See your train
-move in real time.", color = Color.White, fontSize = 22.sp, fontWeight = FontWeight.Bold)
+                    Text("See your train move in real time.", color = Color.White, fontSize = 22.sp, fontWeight = FontWeight.Bold)
                     Text("GPS-powered • Satellite map", color = Muted, fontSize = 12.sp)
                     Surface(color = Blue, shape = RoundedCornerShape(50)) {
                         Text("COMING IN PHASE 2", color = Night, fontSize = 10.sp, fontWeight = FontWeight.Bold, modifier = Modifier.padding(horizontal = 12.dp, vertical = 7.dp))
                     }
-                }
-                Icon(Icons.Default.SatelliteAlt, null, tint = Color(0xFF3D8FC5), modifier = Modifier.align(Alignment.BottomEnd).size(66.dp))
+                    Icon(Icons.Default.SatelliteAlt, null, tint = Color(0xFF3D8FC5), modifier = Modifier.align(Alignment.BottomEnd).size(66.dp))
             }
         }
         item {
